@@ -535,10 +535,9 @@ audiobar button:hover {
   width: 100%;
   height: 100%;
 }
-#gameClose {
-  position: relative;
+#game span {
+  position: absolute;
   top:5;
   left:5;
-  z-index: 7;
   cursor: pointer;
 }
