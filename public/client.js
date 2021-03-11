@@ -19,7 +19,7 @@ $(function() {
   <br>
   <span id="suggest" style="color:#663366;text-decoration:underline;cursor: pointer;">Suggestion Form</span>
   <br>
-  <span id="gameButton" style="color:#663366;text-decoration:bold;cursor: pointer;">Pong Test!</span>
+  <span id="gameButton" style="color:#663366;text-decoration:underline;cursor: pointer;">Pong Test! (embedded)</span>
   <br><br>
   Did you know that this webchat contains 54554 letters of code? No, of course you didn't.
   <br><br>
@@ -32,13 +32,13 @@ $(function() {
 
   $("#gameButton").on('click', function() {
     coolTransition({
-      element: ".game",
+      element: "#game",
       visibility: "show"
     });
   });
   $("#gameClose").on("click", function() {
     coolTransition({
-      element: ".game",
+      element: "#game",
       visibility: "hide"
     });
   });
