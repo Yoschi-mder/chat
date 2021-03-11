@@ -1,4 +1,7 @@
 $(function() {
+  // change audio file volume
+  $('#notif2').prop('volume', 0.2)
+
   // admins
   var creatorid = 'Statix';
   var mysticid = 'Mystic';
@@ -28,7 +31,16 @@ $(function() {
   $('#tbinfo').html('<div id="infoHeader">info<br></div><div id="updates">' + whatsNew + '<br></div><br><div id="misc">' + info + '</div><span id="tbNotice" class="notice"><a class="showRules">rules</a> <b>¦</b> <a class="showFaq">faq</a> <b>¦</b> <a class="showInfo">info</a></span>');
 
   $("#gameButton").on('click', function() {
-    
+    coolTransition({
+      element: ".game",
+      visibility: "show"
+    });
+  });
+  $("#gameClose").on("click", function() {
+    coolTransition({
+      element: ".game",
+      visibility: "hide"
+    });
   });
 
   $('#suggest').on('click', function() {
@@ -74,6 +86,35 @@ $(function() {
     document.getElementById(id).currentTime = 0;
   }
 
+  var shades = document.querySelectorAll('.backgrounds-shade');
+  function coolTransition(prop) {
+    shades.forEach(function(i) {
+      setTimeout(function() {
+        i.style.visibility = "visible";
+        i.style.transform = "scaleX(1) scaleY(1)";
+      }, 300 * Math.random());
+    });
+    setTimeout(function() {
+      if (prop.visibility === "show") $(prop.element).show();
+      else if (prop.visibility === "hide") $(prop.element).hide();
+      $('.modal-content').css('top', '-100%');
+      shades.forEach(function(i) {
+        i.style.transform = "scaleX(0) scaleY(1)";
+      });
+    }, 1500);
+    setTimeout(function() {
+      shades.forEach(function(i) {
+        i.style.transition = "all 0ms linear";
+        i.style.transform = "scaleX(1) scaleY(0)";
+      });
+    }, 2500);
+    setTimeout(function() {
+      shades.forEach(function(i) {
+        i.style.visibility = "hidden";
+        i.style.transition = "";
+      });
+    }, 2600);
+  }
 
   $('#m').on('paste', async function() {
     // prevent user from pasting "<>" (prevents html manipulation)
@@ -134,35 +175,11 @@ $(function() {
     }
   });
 
-  $('#notif2').prop('volume', 0.2)
-
-  var shades = document.querySelectorAll('.backgrounds-shade');
   function closeFirstMenu() {
-    shades.forEach(function(i) {
-      setTimeout(function() {
-        i.style.visibility = "visible";
-        i.style.transform = "scaleX(1) scaleY(1)";
-      }, 300 * Math.random());
+    coolTransition({
+      element: "#myModal",
+      visibility: "hide"
     });
-    setTimeout(function() {
-      $("#myModal").hide();
-      $('.modal-content').css('top', '-100%');
-      shades.forEach(function(i) {
-        i.style.transform = "scaleX(0) scaleY(1)";
-      });
-    }, 1500);
-    setTimeout(function() {
-      shades.forEach(function(i) {
-        i.style.transition = "all 0ms linear";
-        i.style.transform = "scaleX(1) scaleY(0)";
-      });
-    }, 2500);
-    setTimeout(function() {
-      shades.forEach(function(i) {
-        i.style.visibility = "hidden";
-        i.style.transition = "";
-      });
-    }, 2600);
   }
   function openFirstMenu() {
     $("#myModal").fadeIn("fast", function() {
