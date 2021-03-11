@@ -539,4 +539,5 @@ audiobar button:hover {
   position: absolute;
   top:5;
   left:5;
+  z-index: 7;
 }
