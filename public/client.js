@@ -97,7 +97,6 @@ $(function() {
     setTimeout(function() {
       if (prop.visibility === "show") $(prop.element).show();
       else if (prop.visibility === "hide") $(prop.element).hide();
-      $('.modal-content').css('top', '-100%');
       shades.forEach(function(i) {
         i.style.transform = "scaleX(0) scaleY(1)";
       });
@@ -182,6 +181,7 @@ $(function() {
     });
   }
   function openFirstMenu() {
+    $('.modal-content').css('top', '-100%');
     $("#myModal").fadeIn("fast", function() {
       $('.modal-content').animate({ top: '0' }, 1500);
     });
