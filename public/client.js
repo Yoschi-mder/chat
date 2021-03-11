@@ -8,7 +8,7 @@ $(function() {
 
   // conveniently edit taskbar info, even if its a bit messy
   var version = '1.1';
-  var whatsNew = `<br>- Nothing has been added recently. Maybe check out <a id="game">my game</a> instead`;
+  var whatsNew = `<br>- The website has been moved to a new domain! (chat.up.railway.app)`;
   var info = `<br>
   admin list:  `+ admins.toString().split(',').join(', ') + `
   <br><br>
@@ -137,9 +137,6 @@ $(function() {
   });
 
   $('#notif2').prop('volume', 0.2)
-
-  // on load, slide in username box from top
-  $('.modal-content').animate({ top: '0' }, 1500);
 
   var shades = document.querySelectorAll('.backgrounds-shade');
   function closeFirstMenu() {
@@ -1169,5 +1166,8 @@ $(function() {
     });
     playId('n1');
   });
+
+  // after all the code is loaded, slide in username box from top
+  $('.modal-content').animate({ top: '0' }, 1500);
 
 });
