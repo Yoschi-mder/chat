@@ -540,7 +540,6 @@ audiobar button:hover {
 
 #game iframe {
   position: absolute;
-  z-index: 6;
   width: 100%;
   height: 100%;
 }
