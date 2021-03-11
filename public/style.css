@@ -508,6 +508,7 @@ audiobar button:hover {
 
 /* transition effect thing */
 .backgrounds-shades { 
+  z-index: 10;
   display:flex;
   position:absolute;
   top:0;
@@ -529,14 +530,12 @@ audiobar button:hover {
 }
 
 #game {
-  display: none;
   position: relative;
   z-index: 6;
   width: 100%;
   height: 100%;
 }
 #gameClose {
-  display: none;
   position: absolute;
   top:5;
   right:5;
