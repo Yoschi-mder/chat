@@ -381,6 +381,7 @@ audiobar button:hover {
 #pm span {
   position: relative;
   color: #d12a35;
+  text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.5);
   top: 3px;
   border-radius: 5px;
   font-size: 100%;
@@ -550,5 +551,4 @@ audiobar button:hover {
   right:5px;
   cursor: pointer;
   color: #d12a35;
-  text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.5);
 }
