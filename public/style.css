@@ -530,6 +530,7 @@ audiobar button:hover {
 }
 
 #game {
+  display: none;
   position: absolute;
   width:100%;
   height: 100%;
