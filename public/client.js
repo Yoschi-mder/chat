@@ -36,7 +36,7 @@ $(function() {
       visibility: "show"
     });
   });
-  $("#gameClose").on("click", function() {
+  $("#game span").on("click", function() {
     coolTransition({
       element: "#game",
       visibility: "hide"
