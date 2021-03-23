@@ -1189,7 +1189,7 @@ $(function() {
   // after all the code is loaded, open thing
   $('.modal-content').animate({ top: '-100px' }, 1500);
   setTimeout(function() {
-    $('#logo').animate({ top: '25px' }, 900);
-  }, 1000);
+    $('#logo').animate({ top: '25px' }, 1500);
+  }, 500);
   
 });
