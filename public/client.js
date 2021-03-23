@@ -1184,27 +1184,24 @@ $(function() {
 
   // after all the code is loaded, open thing
   
-  setTimeout(function() {
-    shades.forEach(function(i) {
-        i.style.transform = "scaleX(0) scaleY(1)";
-    });
-   }, 1500);
+   shades.forEach(function(i) {
+      i.style.transform = "scaleX(0) scaleY(1)";
+   });
    setTimeout(function() {
       shades.forEach(function(i) {
         i.style.transition = "all 0ms linear";
         i.style.transform = "scaleX(1) scaleY(0)";
       });
-   }, 2500);
+     $('.modal-content').animate({ top: '0' }, 1500);
+      setTimeout(function() {
+        $('#logo').animate({ top: '30px' }, 900);
+      }, 1500);
+   }, 1000);
    setTimeout(function() {
       shades.forEach(function(i) {
         i.style.visibility = "hidden";
         i.style.transition = "";
       });
-   }, 2600);
-  
-  $('.modal-content').animate({ top: '0' }, 1500);
-  setTimeout(function() {
-      $('#logo').animate({ top: '30px' }, 300);
-   }, 1500);
+   }, 1100);
 
 });
