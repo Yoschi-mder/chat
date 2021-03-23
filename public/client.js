@@ -539,10 +539,11 @@ $(function() {
 
   function changeTbButton(id) {
     if (tbScreen != id) {
-      $('#' + tbScreen + 'Button').css('background', '#e0ad9d');
+      var currentId = tbScreen;
+      $('#' + currentId + 'Button').css('background', '#e0ad9d');
       $('#' + id + 'Button').css('background', '#45ADA8');
-      $('.tb' + tbScreen).animate({ left: '-100%' }, 'fast', function() {
-        $('.tb' + tbScreen).css("left", '100%');
+      $('.tb' + currentId).animate({ left: '-100%' }, 'fast', function() {
+        $('.tb' + currentId).css("left", '100%');
       });
       $('.tb' + id).animate({ left: '0' }, 'fast');
       tbScreen = id;
