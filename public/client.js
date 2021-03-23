@@ -29,7 +29,7 @@ $(function() {
   Enter "/cmds" to see a list of commands.
   <br>
   Type "@" before a username to send a notification! ('@username')
-  <br><br><br><br><br><br><br><br>`
+  <br><br><br><br><br>`
 
   $('#tbinfo').html('<div id="updates">' + whatsNew + '<br></div><br><div id="misc">' + info + '</div><span id="tbNotice" class="notice"><a class="showRules">rules</a> <b>¦</b> <a class="showFaq">faq</a> <b>¦</b> <a class="showInfo">info</a></span>');
 
