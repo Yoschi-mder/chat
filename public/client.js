@@ -186,7 +186,7 @@ $(function() {
     $('.modal-content').animate({ top: '-100px' }, 1500);
     setTimeout(function() {
       $('#logo').animate({ top: '25px' }, 900);
-     }, 1500);
+     }, 1000);
     coolTransition({
       element: "#myModal",
       visibility: "show"
@@ -1193,6 +1193,6 @@ $(function() {
   $('.modal-content').animate({ top: '-100px' }, 1500);
   setTimeout(function() {
     $('#logo').animate({ top: '25px' }, 900);
-  }, 1500);
+  }, 1000);
   
 });
