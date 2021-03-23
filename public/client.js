@@ -1183,25 +1183,9 @@ $(function() {
   });
 
   // after all the code is loaded, open thing
-  
-   shades.forEach(function(i) {
-      i.style.transform = "scaleX(0) scaleY(1)";
-   });
-   setTimeout(function() {
-      shades.forEach(function(i) {
-        i.style.transition = "all 0ms linear";
-        i.style.transform = "scaleX(1) scaleY(0)";
-      });
-   }, 1000);
-   setTimeout(function() {
-      shades.forEach(function(i) {
-        i.style.visibility = "hidden";
-        i.style.transition = "";
-      });
-   }, 1100);
-    $('.modal-content').animate({ top: '-100px' }, 1500);
-    setTimeout(function() {
-        $('#logo').animate({ top: '25px' }, 900);
-     }, 1500);
+  $('.modal-content').animate({ top: '-100px' }, 1500);
+  setTimeout(function() {
+    $('#logo').animate({ top: '25px' }, 900);
+  }, 1500);
   
 });
