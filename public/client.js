@@ -181,16 +181,13 @@ $(function() {
     });
   }
   function openFirstMenu() {
-    $('#logo').css('top', '-100%');
-    $('.modal-content').css('top', '-100%');
-    $('.modal-content').animate({ top: '-100px' }, 1500);
-    setTimeout(function() {
-      $('#logo').animate({ top: '25px' }, 900);
-     }, 1000);
     coolTransition({
       element: "#myModal",
       visibility: "show"
     });
+    setTimeout(function() {
+      $('#logo').css('top', '25px');
+    }, 1000);
   }
 
   // declare variables related to username and stuff
