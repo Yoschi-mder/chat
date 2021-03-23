@@ -195,7 +195,8 @@ ver {
      overflow-x:hidden;
 }
  #infoHeader {
-     position: relative;
+     position: absolute;
+     top: 60px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
@@ -239,7 +240,8 @@ ver {
      overflow-x:hidden;
 }
  #userHeader {
-     position: relative;
+     position: absolute;
+     top: 60px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
@@ -285,11 +287,12 @@ ver {
      overflow-x:hidden;
 }
 #roomsHeader {
-  position: relative;
-     background:#9DE0AD;
-     font-size:25px;
-     width:100%;
-     margin-bottom: 15px;
+  position: absolute;
+  top: 60px;
+  background:#9DE0AD;
+  font-size:25px;
+  width:100%;
+  margin-bottom: 15px;
 }
 .rooms {
   position: relative;
