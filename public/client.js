@@ -181,9 +181,15 @@ $(function() {
     });
   }
   function openFirstMenu() {
+    $('#logo').css('top', '-100%');
     $('.modal-content').css('top', '-100%');
-    $("#myModal").fadeIn("fast", function() {
-      $('.modal-content').animate({ top: '0' }, 1500);
+    $('.modal-content').animate({ top: '-100px' }, 1500);
+    setTimeout(function() {
+      $('#logo').animate({ top: '25px' }, 900);
+     }, 1500);
+    coolTransition({
+      element: "#myModal",
+      visibility: "show"
     });
   }
 
