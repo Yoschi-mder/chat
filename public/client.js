@@ -537,8 +537,9 @@ $(function() {
     if (tbScreen != id) {
       $('#' + tbScreen + 'Button').css('background', '#e0ad9d');
       $('#' + id + 'Button').css('background', '#45ADA8');
-      $('#tb' + tbScreen).animate({ left: '-100%' }, 'fast');
-      $('#tb' + id).animate({ left: '0' }, 'fast');
+      $('#tb' + tbScreen).animate({ left: '-100%' }, 'fast', function() {
+        $('#tb' + id).animate({ left: '0' }, 'fast');
+      });
       tbScreen = id;
     }
   }
