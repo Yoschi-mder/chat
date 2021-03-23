@@ -1192,10 +1192,10 @@ $(function() {
         i.style.transition = "all 0ms linear";
         i.style.transform = "scaleX(1) scaleY(0)";
       });
-     $('.modal-content').animate({ top: '0' }, 1500);
+     $('.modal-content').animate({ top: '0' }, 800);
       setTimeout(function() {
         $('#logo').animate({ top: '30px' }, 900);
-      }, 1500);
+      }, 800);
    }, 1000);
    setTimeout(function() {
       shades.forEach(function(i) {
