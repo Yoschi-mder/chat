@@ -201,6 +201,7 @@ ver {
      font-size:25px;
      width:100%;
    height: 30px;
+   z-index: 4;
 }
  #updates {
      background:#7FCAB1;
@@ -247,6 +248,7 @@ ver {
      font-size:25px;
      width:100%;
    height: 30px;
+   z-index: 4;
 }
 
 .users {
@@ -294,6 +296,7 @@ ver {
   font-size:25px;
   width:100%;
   height: 30px;
+  z-index: 4;
 }
 .rooms {
   position: relative;
