@@ -192,6 +192,7 @@ ver {
      font-size:15px;
      overflow-y:auto;
      overflow-x:hidden;
+   z-index: 4;
 }
  #infoHeader {
      position: absolute;
@@ -200,7 +201,6 @@ ver {
      background:#9DE0AD;
      font-size:25px;
      width:100%;
-   z-index: 4;
 }
  #updates {
      background:#7FCAB1;
