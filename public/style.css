@@ -195,8 +195,8 @@ ver {
      overflow-x:hidden;
 }
  #infoHeader {
-     position: relative;
-     top: -30px;
+     position: absolute;
+     top: 0px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
