@@ -196,7 +196,8 @@ ver {
 }
  #infoHeader {
      position: absolute;
-     top: 0px;
+     top: -20px;
+   height: 30px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
