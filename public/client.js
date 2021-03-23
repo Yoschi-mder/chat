@@ -12,7 +12,9 @@ $(function() {
 
   // conveniently edit taskbar info, even if its a bit messy
   var version = '1.1';
-  var whatsNew = `<br>- The website has been moved to a new domain! (chat.up.railway.app)`;
+  var whatsNew = `
+    - The website has been moved to a new domain! (chat.up.railway.app)<br>
+    - Improved taskbar aniamtion (and other visual improvements)`;
   var info = `<br>
   admin list:  `+ admins.toString().split(',').join(', ') + `
   <br><br>
