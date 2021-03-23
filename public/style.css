@@ -71,8 +71,9 @@
 
 #logo {
   position: absolute;
+  width: 350px;
   margin: auto;
-  top: 20px;
+  top: -100px;
 }
 
 /* idk tbh */
