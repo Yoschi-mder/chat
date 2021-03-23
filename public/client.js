@@ -503,7 +503,7 @@ $(function() {
   var usersTyping = [];
   var messageList = document.getElementById('messages');
 
-  var tbScreen = "info";
+  var tbScreen = "rooms";
 
   var isPm = 0;
   var pmUser = '';
@@ -542,8 +542,9 @@ $(function() {
       $('#' + tbScreen + 'Button').css('background', '#e0ad9d');
       $('#' + id + 'Button').css('background', '#45ADA8');
       $('.tb' + tbScreen).animate({ left: '-100%' }, 'fast', function() {
-        $('.tb' + id).animate({ left: '0' }, 'fast');
+        $('.tb' + tbScreen).css("left", '100%');
       });
+      $('.tb' + id).animate({ left: '0' }, 'fast');
       tbScreen = id;
     }
   }
