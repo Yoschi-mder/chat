@@ -25,7 +25,7 @@
 }
  .modal-content {
      color: white;
-     top: -35%;
+     top: -100%;
      max-width: 500px;
      height: 35%;
      min-height: 200px;
@@ -70,7 +70,6 @@
 }
 
 #logo {
-  position: absolute;
   width: 350px;
   display: block;
   margin: 0 auto;
