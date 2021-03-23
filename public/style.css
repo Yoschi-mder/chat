@@ -196,7 +196,7 @@ ver {
 }
  #infoHeader {
      position: absolute;
-     top: -45px;
+     top: 60px;
    height: 30px;
      background:#9DE0AD;
      font-size:25px;
@@ -242,12 +242,12 @@ ver {
 }
  #userHeader {
      position: absolute;
-     top: -30px;
+     top: 60px;
+    height: 30px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
-   height: 30px;
-   z-index: 4;
+     left:-100%;
 }
 
 .users {
@@ -290,12 +290,12 @@ ver {
 }
 #roomsHeader {
   position: absolute;
-  top: -30px;
-  background:#9DE0AD;
-  font-size:25px;
-  width:100%;
-  height: 30px;
-  z-index: 4;
+     top: 60px;
+    height: 30px;
+     background:#9DE0AD;
+     font-size:25px;
+     width:100%;
+     left:-100%;
 }
 .rooms {
   position: relative;
