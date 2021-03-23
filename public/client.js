@@ -1201,7 +1201,7 @@ $(function() {
    }, 1100);
     $('.modal-content').animate({ top: '0' }, 1500);
     setTimeout(function() {
-        $('#logo').animate({ top: '25px' }, 900);
+        $('#logo').animate({ top: '-100px' }, 900);
      }, 1500);
   
 });
