@@ -75,7 +75,7 @@
   width: 350px;
   display: block;
   margin: 0 auto;
-  top: -100px;
+  top: -100%;
   text-align: center;
 }
 
