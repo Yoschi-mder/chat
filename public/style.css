@@ -196,7 +196,7 @@ ver {
 }
  #infoHeader {
      position: absolute;
-     top: 0;
+     top: -30px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
@@ -241,11 +241,10 @@ ver {
 }
  #userHeader {
      position: absolute;
-     top: 0;
+     top: -30px;
      background:#9DE0AD;
      font-size:25px;
      width:100%;
-     margin-bottom: 15px;
 }
 
 .users {
@@ -288,11 +287,10 @@ ver {
 }
 #roomsHeader {
   position: absolute;
-  top: 0;
+  top: -30px;
   background:#9DE0AD;
   font-size:25px;
   width:100%;
-  margin-bottom: 15px;
 }
 .rooms {
   position: relative;
